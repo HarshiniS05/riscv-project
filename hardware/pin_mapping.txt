@@ -1,1 +1,48 @@
-Sensor to microcontroller pin mapping 
+Sensor to Microcontroller Pin Mapping
+-------------------------------------
+
+Power Supply Connections
+------------------------
+1. Power (3.3V/5V)    → 3.3V/5V pin (VSDsquadron Mini)
+   - Power supply for all sensors and MCU
+
+2. Ground (GND)       → GND pin
+   - Common ground for all modules
+
+SPI Interface (MCP3008 ADC ↔ RISC-V)
+------------------------------------
+1. SPI_CS   → PC1 (Pin 10)
+   - Chip Select for MCP3008
+
+2. SPI_MOSI → PC6 (Pin 11, DIN)
+   - Sends data from MCU to MCP3008
+
+3. SPI_MISO → PC7 (Pin 12, DOUT)
+   - Receives data from MCP3008 to MCU
+
+4. SPI_SCLK → PC5 (Pin 13)
+   - Clock signal for SPI communication
+
+Analog Inputs to MCP3008 ADC
+----------------------------
+1. Temperature Sensor (LM35) → MCP3008 CH0
+   - Sends analog temperature signal
+
+2. Force Sensor (FSR)         → MCP3008 CH1
+   - Sends analog force signal
+
+I2C Interface (MAX30102 → RISC-V)
+---------------------------------
+1. I2C_SCL → PC3 (Pin 2)
+   - Clock line
+
+2. I2C_SDA → PC4 (Pin 3)
+   - Data line
+
+UART Interface (FT232RL → RISC-V)
+---------------------------------
+1. UART_RX → PC2 (Pin 2)
+   - Receives serial data from FT232RL
+
+2. UART_TX → PC0 (Pin 3)
+   - Sends serial data to FT232RL
