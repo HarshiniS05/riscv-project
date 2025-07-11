@@ -1,4 +1,5 @@
-# riscv-project
+# NEONATAL RESPIRATORY MONITORING SYSTEM USING RISC-V PROCESSOR
+
 SUMMARY:
 The Neonatal Respiratory Monitoring System is a cost-effective, real-time biomedical monitoring device designed to continuously observe vital parameters—respiratory activity, body temperature, and heart rate/SpO2—of neonates, especially in incubator settings. Using a powerful yet low-cost RISC-V based VSDSquadron Mini microcontroller, the system integrates analog sensors (LM35DZ and FSR402) through an MCP3008 ADC using SPI, and a digital MAX30102 pulse oximeter using I2C. The collected data is transmitted via UART (FT232RL) to a serial terminal or GUI for live monitoring, with alert thresholds to notify caregivers of abnormal conditions.
 Unlike many existing neonatal monitors that are expensive, bulky, or not open-source, our solution stands out due to its affordability (total cost ≈ ₹2500), modular design, and open-source accessibility, making it ideal for deployment in resource-limited clinical settings and training labs. The system emphasizes ease of reproduction, scalability, and low power consumption, with compact PCB-level integration possibilities. Targeting TRL-8 readiness, it has been tested in simulated neonatal environments and is ready for integration in real-world healthcare settings.
