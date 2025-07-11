@@ -2,7 +2,7 @@
 
 | Component                  | Part Number | Cost (INR) |
 |---------------------------|-------------|------------|
-| VSD Squadron Mini         | -           | 1000       |
+| VSD Squadron Mini         | CH32V003F4U6         | 1000       |
 | SpO₂ + Pulse Rate Sensor  | MAX30102    | 260        |
 | Temperature Sensor        | LM35DZ      | 70         |
 | Force Sensor              | FSR402      | 380        |
